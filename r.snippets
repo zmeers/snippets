@@ -6,3 +6,68 @@ snippet cwm
 	
 snippet cw3
 	${1:variable1} == ${2:observation1} & ${3:variable2} == ${4:observation2} ~ ${4:new observation}
+
+	
+snippet hi
+	##################################################
+	## Project: ${1:title}
+	## Date: `r paste(lubridate::date())`
+	## Author: Zoe Meers
+	##################################################
+
+snippet ltx
+	$${}$$
+
+snippet inltx
+	${}$
+	
+snippet alignltx
+	$$
+	\begin{aligned}
+	&
+	&
+	&
+	\end{aligned}
+	$$
+
+snippet columns
+	<div class = "column-au">
+	\colau
+		
+	```{r}
+		  
+	```
+		 
+	</div>
+		   
+	\columnbreak
+		  
+	<div class = "column-us">
+	```{r}
+		 
+	```
+		 
+	</div>
+	\colus
+
+snippet ussc
+	library(ussc)
+	library(tidyverse)
+	
+snippet ussc_bar_plot
+	ggplot(${1:dataframe}, aes(x = ${2:x}, y = ${3:y} fill = ${4:fill}) + 
+	geom_bar(stat = "identity") + 
+	theme_ussc() + 
+	scale_fill_ussc()
+	
+snippet ussc_line_chart
+	ggplot(${1:dataframe}, aes(x = ${2:x}, y = ${3:y} fill = ${4:fill}) + 
+	geom_bar(stat = "identity") + 
+	theme_ussc() + 
+	scale_colour_ussc()
+	
+snippet bayes
+	library(rstan)
+	library(rstanarm)
+	library(brms)
+	library(tidybayes)
