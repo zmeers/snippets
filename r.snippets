@@ -53,6 +53,8 @@ snippet columns
 snippet ussc
 	library(ussc)
 	library(tidyverse)
+	library(fs)
+	library(here)
 	
 snippet ussc_bar_plot
 	ggplot(${1:dataframe}, aes(x = ${2:x}, y = ${3:y} fill = ${4:fill}) + 
@@ -71,3 +73,10 @@ snippet bayes
 	library(rstanarm)
 	library(brms)
 	library(tidybayes)
+
+snippet net
+	library(igraph)
+	library(tidygraph)
+	library(influenceR)
+	library(ggraph)
+	library(seriation)
